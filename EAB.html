@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--
+http://www.queness.com/post/14577/create-a-simple-responsive-portfolio-page-with-filtering-and-hover-effect
+http://www.queness.com/resources/html/simple-portfolio-page/index.html
+-->
+
+	<meta charset="utf-8">
+	<title>Beetles of Hot Springs</title>
+	<meta name="description" content="In this tutorial, I'm going to show you how to create portfolio page with filtering and also hover effect for each of your project. We will be using a CSS3 and jQuery filter & sort plugin called MixItUp.">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+	<![endif]-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixItUp({
+  				selectors: {
+    			  target: '.portfolio',
+    			  filter: '.filter'	
+    		  },
+    		  load: {
+      		  filter: '.app'  
+      		}     
+				});								
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+
+</head>
+<body>
+
+<div id="info">
+	<div class="info-wrapper">
+		<a class="title"><b>BEETLES OF HOT SPRINGS NATIONAL PARK</b></a>
+		<p>A digital archive of the beetles of HSNP.</p>
+	</div>
+</div>	
+
+	<div class="container">
+
+		<ul id="filters" class="clearfix">
+			<li><span class="tabs filter"><a class="link" href="index.html">Home</a></span></li>
+			<li><span class="tabs filter active">EAB</span></li>
+			<li><span class="tabs filter"><a class="link" href="gallery.html">Gallery</a></span></li>
+			<li><span class="tabs filter"><a class="link" href="map.html">Map</a></span></li>
+		</ul>
+		
+		
+	</div><!-- container -->
+
+	<br>
+	
+	<img class="homeImg" src="EAB.jpg">
+	
+	<br>
+	
+	<p class="taxonomy">The Emerald Ash Borer</p>
+	
+	<br>
+	
+	<p class="EABP">The Emerald Ash Borer (EAB) is a beetle that raises major concerns to the safety of Ash trees in the Park. In the early summer, EAB implant their eggs in the bark of Ash trees where their larvae chew extensive channels underneath the bark throughout the fall. In the spring, EAB emerge from the tree leaving small D-shaped exit holes. EAB-ridden Ash trees die within one to four years of being infested3. Although EAB have yet to arrive in the Park, there have been confirmed sightings of the beetle less than 15 miles east of Hot Springs. As a result, one facet of this project is to monitor for the presence of EAB in the Park. To initiate this process, our group identified 17 Ash trees along the eastern edge of the Park (see locations on <strong>Map</strong> page). In the spring, when EAB are due to emerge, these trees will be examined to determine whether or not they are infested. If they are infested, approriate steps will be taken to assure the safety of the trees.
+</p>
+
+
+	
+</body>
+</html>

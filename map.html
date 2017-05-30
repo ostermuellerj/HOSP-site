@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--
+http://www.queness.com/post/14577/create-a-simple-responsive-portfolio-page-with-filtering-and-hover-effect
+http://www.queness.com/resources/html/simple-portfolio-page/index.html
+-->
+
+	<meta charset="utf-8">
+	<title>Beetles of Hot Springs</title>
+	<meta name="description" content="In this tutorial, I'm going to show you how to create portfolio page with filtering and also hover effect for each of your project. We will be using a CSS3 and jQuery filter & sort plugin called MixItUp.">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+	<![endif]-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixItUp({
+  				selectors: {
+    			  target: '.portfolio',
+    			  filter: '.filter'	
+    		  },
+    		  load: {
+      		  filter: '.app'  
+      		}     
+				});								
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+
+</head>
+<body>
+
+	<div id="info">
+		<div class="info-wrapper">
+			<a class="title"><b>BEETLES OF HOT SPRINGS NATIONAL PARK</b></a>
+			<p>A digital archive of the beetles of HSNP.</p>
+		</div>
+	</div>	
+
+		<div class="container">
+
+			<ul id="filters" class="clearfix">
+				<li><span class="tabs filter"><a class="link" href="index.html">Home</a></span></li>
+				<li><span class="tabs filter"><a class="link" href="EAB.html">EAB</a></span></li>
+				<li><span class="tabs filter"><a class="link" href="gallery.html">Gallery</a></span></li>
+				<li><span class="tabs filter active">Map</span></li>	
+			</ul>
+			
+		<p class="mapHeader">Click the expand button in top right of map to view expanded map and legend.</p>
+
+	<div id="map">
+		<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1aZgiZc4-b-1HOfXi1E2U0hnjJnc" width="940" height="580"></iframe>
+	</div>
+
+</body>
+</html>

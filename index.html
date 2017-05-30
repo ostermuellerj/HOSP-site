@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--
+http://www.queness.com/post/14577/create-a-simple-responsive-portfolio-page-with-filtering-and-hover-effect
+http://www.queness.com/resources/html/simple-portfolio-page/index.html
+-->	
+
+	<meta charset="utf-8">
+	<title>Beetles of Hot Springs</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="lightbox2-master/dist/css/lightbox.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<link href="lightboxcss/lightbox.css" rel="stylesheet">
+	
+	
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+	<![endif]-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixItUp({
+  				selectors: {
+    			  target: '.portfolio',
+    			  filter: '.filter'	
+    		  },
+    		  load: {
+      		  filter: '.app'  
+      		}     
+				});								
+			
+			}
+
+		};
+		
+		
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	
+	//
+	$(document).ready(function() {
+	$('#gallery a').lightBox();
+	});
+	//
+	</script>
+
+</head>
+<body>
+
+<div id="info">
+	<div class="info-wrapper">
+		<a class="title"><b>BEETLES OF HOT SPRINGS NATIONAL PARK</b></a>
+		<p>A digital archive of the beetles of HSNP.</p>
+	</div>
+</div>	
+
+	<div class="container">
+		<ul id="filters" class="clearfix">
+			<li><span class="tabs filter active">Home</span></li>
+			<li><span class="tabs filter"><a class="link" href="EAB.html">EAB</a></span></li>
+			<li><span class="tabs filter"><a class="link" href="gallery.html">Gallery</a></span></li>
+			<li><span class="tabs filter"><a class="link" href="map.html">Map</a></span></li>
+		</ul>
+	</div><!-- container -->
+	
+	<br>
+	
+	<img class="homeImg" src="dynastes.jpg">
+	
+	<br>
+	
+	<p class="taxonomy">Dynastes tityus ♂</p>
+	
+	<br>
+	
+	<p class="homeP"><strong>No significant study has been done on the insect populations of Hot Springs National Park in almost <em>sixty years,</em></strong> and there is a severe lack of knowledge regarding beetles in the park; this project plans to initiate an indefinite study of collecting beetles in the park and monitoring for invasive species to better understand and ultimately protect the Park’s ecosystem. 
+	<br><br>
+	The Hot Springs National Park owns a collection of over 650 beetle specimens, such as the beetle seen above, yet they are inaccessible to the public and considerably old, with many of the beetles dating back to the 1960s. It is thus unknown whether these beetles are representative of current beetle populations in the Park. This collection needs digitization, and a new index of beetles in the Park must be created. At least one beetle from every taxonomical family in the Park’s collection was photographed and digitized,in total 130 insects. Additionally, trapping and identification of current beetles in the Park began, and 92 specimens were collected. Lastly, seventeen Ash trees along the eastern edge of the Park were identified for surveying in the spring, as they are susceptible to infestation of the Emerald Ash Borer, an invasive deforestation beetle that has been located less than 15 miles east of the Park.</p>
+
+
+	<p class="credit">ASMSA 2017</p>
+	
+	<script src="lightboxjs/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

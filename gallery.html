@@ -1,0 +1,2764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--
+http://www.queness.com/post/14577/create-a-simple-responsive-portfolio-page-with-filtering-and-hover-effect
+http://www.queness.com/resources/html/simple-portfolio-page/index.html
+-->
+
+	<meta charset="utf-8">
+	<meta name="description" content="In this tutorial, I'm going to show you how to create portfolio page with filtering and also hover effect for each of your project. We will be using a CSS3 and jQuery filter & sort plugin called MixItUp.">
+	<title>Beetles of Hot Springs</title>
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+	<link rel="stylesheet" href="lightbox2-master/dist/css/lightbox.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+	<![endif]-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixItUp({
+  				selectors: {
+    			  target: '.portfolio',
+    			  filter: '.filter'	
+    		  },
+    		  load: {
+      		  filter: '.app'  
+      		}     
+				});								
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	//<li><span class="tabs filter active"><a class="link" href="index.html">Home</a></span></li>
+	</script>
+
+</head>
+<body>
+
+<div id="info">
+	<div class="info-wrapper">
+		<a class="title"><b>BEETLES OF HOT SPRINGS NATIONAL PARK</b></a>
+		<p>A digital archive of the beetles of HSNP.</p>
+	</div>
+</div>	
+
+	<div class="container">
+
+				<!-- <a href="index.html"><img class="example-image" src="images/backToHome.png" alt="image-1" /></a> -->
+
+		<ul id="filters" class="clearfix">
+			<li><span class="backArrow"><a class="link" href="index.html"><img src="backArrow.png" width="15" height="15"></a></span></li>
+			<li><span class="tabs filter" data-filter=".old,.new">All</span></li>
+			<li><span class="tabs filter" data-filter=".old">Old</span></li>
+			<li><span class="tabs filter" data-filter=".new">New</span></li>
+			<li><span class="tabs filter" data-filter=".invasive">Invasive</span></li>
+		</ul>
+		
+		<p class="galleryP">Select a category to begin. <strong>Old</strong> beetles are from the Park's original 1960s archives, <strong>New</strong> beetles have been collected as a part of this project. <strong>Invasive</strong> beetles currently (or did at one point in time) pose a threat to the Park's native species and ecosystem. The taxonomic identifications of each specimen are listed when hovered over. Beetles with abreviation <strong>"sp."</strong> are not identified to species level. Beetles with a <strong>"?"</strong> are yet to be identified. Click the thumbnails to see additional photos of each beetle.</p>
+		
+<div id="portfoliolist">
+			
+			<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9001-0.jpg" data-lightbox="9001">
+					<img class="example-image" src="Index/HOSP 9001-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9001-1.jpg" data-lightbox="9001"></a>
+						<a href="Index/HOSP 9001-2.jpg" data-lightbox="9001"></a>
+						<a href="Index/HOSP 9001-3.jpg" data-lightbox="9001"></a>
+						<a href="Index/HOSP 9001-4.jpg" data-lightbox="9001"></a>
+						<a href="Index/HOSP 9001-5.jpg" data-lightbox="9001"></a>
+
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Silfa Suranamenis</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9004-0.jpg" data-lightbox="9004">
+					<img class="example-image1" src="Index/HOSP 9004-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9004-1.jpg" data-lightbox="9004"></a>
+						<a href="Index/HOSP 9004-2.jpg" data-lightbox="9004"></a>
+						<a href="Index/HOSP 9004-3.jpg" data-lightbox="9004"></a>
+						<a href="Index/HOSP 9004-4.jpg" data-lightbox="9004"></a>
+						<a href="Index/HOSP 9004-5.jpg" data-lightbox="9004"></a>
+
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Silpha americana?</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9006-0.jpg" data-lightbox="9006">
+					<img class="example-image" src="Index/HOSP 9006-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9006-1.jpg" data-lightbox="9006"></a>
+						<a href="Index/HOSP 9006-2.jpg" data-lightbox="9006"></a>
+						<a href="Index/HOSP 9006-3.jpg" data-lightbox="9006"></a>
+						<a href="Index/HOSP 9006-4.jpg" data-lightbox="9006"></a>
+						<a href="Index/HOSP 9006-5.jpg" data-lightbox="9006"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Nicrophorus pustulatus</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9007-0.jpg" data-lightbox="9007">
+					<img class="example-image" src="Index/HOSP 9007-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9007-1.jpg" data-lightbox="9007"></a>
+						<a href="Index/HOSP 9007-2.jpg" data-lightbox="9007"></a>
+						<a href="Index/HOSP 9007-3.jpg" data-lightbox="9007"></a>
+						<a href="Index/HOSP 9007-4.jpg" data-lightbox="9007"></a>
+						<a href="Index/HOSP 9007-5.jpg" data-lightbox="9007"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Nicrophorus orbicollis</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9017-0.jpg" data-lightbox="9017">
+					<img class="example-image" src="Index/HOSP 9017-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9017-1.jpg" data-lightbox="9017"></a>
+						<a href="Index/HOSP 9017-2.jpg" data-lightbox="9017"></a>
+						<a href="Index/HOSP 9017-3.jpg" data-lightbox="9017"></a>
+						<a href="Index/HOSP 9017-4.jpg" data-lightbox="9017"></a>
+						<a href="Index/HOSP 9017-5.jpg" data-lightbox="9017"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Ontholestes cingulatus</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9020-0.jpg" data-lightbox="9020">
+					<img class="example-image" src="Index/HOSP 9020-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9020-1.jpg" data-lightbox="9020"></a>
+						<a href="Index/HOSP 9020-2.jpg" data-lightbox="9020"></a>
+						<a href="Index/HOSP 9020-3.jpg" data-lightbox="9020"></a>
+						<a href="Index/HOSP 9020-4.jpg" data-lightbox="9020"></a>
+						<a href="Index/HOSP 9020-5.jpg" data-lightbox="9020"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Staphylinidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9024-0.jpg" data-lightbox="9024">
+					<img class="example-image" src="Index/HOSP 9024-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9024-1.jpg" data-lightbox="9024"></a>
+						<a href="Index/HOSP 9024-2.jpg" data-lightbox="9024"></a>
+						<a href="Index/HOSP 9024-3.jpg" data-lightbox="9024"></a>
+						<a href="Index/HOSP 9024-4.jpg" data-lightbox="9024"></a>
+						<a href="Index/HOSP 9024-5.jpg" data-lightbox="9024"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Staphylinidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9046-0.jpg" data-lightbox="9046">
+					<img class="example-image" src="Index/HOSP 9046-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9046-1.jpg" data-lightbox="9046"></a>
+						<a href="Index/HOSP 9046-2.jpg" data-lightbox="9046"></a>
+						<a href="Index/HOSP 9046-3.jpg" data-lightbox="9046"></a>
+						<a href="Index/HOSP 9046-4.jpg" data-lightbox="9046"></a>
+						<a href="Index/HOSP 9046-5.jpg" data-lightbox="9046"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cantheridae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9048-0.jpg" data-lightbox="9048">
+					<img class="example-image" src="Index/HOSP 9048-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9048-1.jpg" data-lightbox="9048"></a>
+						<a href="Index/HOSP 9048-2.jpg" data-lightbox="9048"></a>
+						<a href="Index/HOSP 9048-3.jpg" data-lightbox="9048"></a>
+						<a href="Index/HOSP 9048-4.jpg" data-lightbox="9048"></a>
+						<a href="Index/HOSP 9048-5.jpg" data-lightbox="9048"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cantheridae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9059-0.jpg" data-lightbox="9059">
+					<img class="example-image" src="Index/HOSP 9059-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9059-1.jpg" data-lightbox="9059"></a>
+						<a href="Index/HOSP 9059-2.jpg" data-lightbox="9059"></a>
+						<a href="Index/HOSP 9059-3.jpg" data-lightbox="9059"></a>
+						<a href="Index/HOSP 9059-4.jpg" data-lightbox="9059"></a>
+						<a href="Index/HOSP 9059-5.jpg" data-lightbox="9059"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Lampyridae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9065-0.jpg" data-lightbox="9065">
+					<img class="example-image" src="Index/HOSP 9065-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9065-1.jpg" data-lightbox="9065"></a>
+						<a href="Index/HOSP 9065-2.jpg" data-lightbox="9065"></a>
+						<a href="Index/HOSP 9065-3.jpg" data-lightbox="9065"></a>
+						<a href="Index/HOSP 9065-4.jpg" data-lightbox="9065"></a>
+						<a href="Index/HOSP 9065-5.jpg" data-lightbox="9065"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Lampyridae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9066-0.jpg" data-lightbox="9066">
+					<img class="example-image" src="Index/HOSP 9066-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9066-1.jpg" data-lightbox="9066"></a>
+						<a href="Index/HOSP 9066-2.jpg" data-lightbox="9066"></a>
+						<a href="Index/HOSP 9066-3.jpg" data-lightbox="9066"></a>
+						<a href="Index/HOSP 9066-4.jpg" data-lightbox="9066"></a>
+						<a href="Index/HOSP 9066-5.jpg" data-lightbox="9066"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Phengodes plumosa</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9067-0.jpg" data-lightbox="9067">
+					<img class="example-image" src="Index/HOSP 9067-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9067-1.jpg" data-lightbox="9067"></a>
+						<a href="Index/HOSP 9067-2.jpg" data-lightbox="9067"></a>
+						<a href="Index/HOSP 9067-3.jpg" data-lightbox="9067"></a>
+						<a href="Index/HOSP 9067-4.jpg" data-lightbox="9067"></a>
+						<a href="Index/HOSP 9067-5.jpg" data-lightbox="9067"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Calopteron reticulatum</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9073-0.jpg" data-lightbox="9073">
+					<img class="example-image" src="Index/HOSP 9073-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9073-1.jpg" data-lightbox="9073"></a>
+						<a href="Index/HOSP 9073-2.jpg" data-lightbox="9073"></a>
+						<a href="Index/HOSP 9073-3.jpg" data-lightbox="9073"></a>
+						<a href="Index/HOSP 9073-4.jpg" data-lightbox="9073"></a>
+						<a href="Index/HOSP 9073-5.jpg" data-lightbox="9073"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Alans myops?</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9075-0.jpg" data-lightbox="9075">
+					<img class="example-image" src="Index/HOSP 9075-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9075-1.jpg" data-lightbox="9075"></a>
+						<a href="Index/HOSP 9075-2.jpg" data-lightbox="9075"></a>
+						<a href="Index/HOSP 9075-3.jpg" data-lightbox="9075"></a>
+						<a href="Index/HOSP 9075-4.jpg" data-lightbox="9075"></a>
+						<a href="Index/HOSP 9075-5.jpg" data-lightbox="9075"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Elateridae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9076-0.jpg" data-lightbox="9076">
+					<img class="example-image" src="Index/HOSP 9076-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9076-1.jpg" data-lightbox="9076"></a>
+						<a href="Index/HOSP 9076-2.jpg" data-lightbox="9076"></a>
+						<a href="Index/HOSP 9076-3.jpg" data-lightbox="9076"></a>
+						<a href="Index/HOSP 9076-4.jpg" data-lightbox="9076"></a>
+						<a href="Index/HOSP 9076-5.jpg" data-lightbox="9076"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Elateridae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9079-0.jpg" data-lightbox="9079">
+					<img class="example-image" src="Index/HOSP 9079-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9079-1.jpg" data-lightbox="9079"></a>
+						<a href="Index/HOSP 9079-2.jpg" data-lightbox="9079"></a>
+						<a href="Index/HOSP 9079-3.jpg" data-lightbox="9079"></a>
+						<a href="Index/HOSP 9079-4.jpg" data-lightbox="9079"></a>
+						<a href="Index/HOSP 9079-5.jpg" data-lightbox="9079"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Elateridae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9088-0.jpg" data-lightbox="9088">
+					<img class="example-image" src="Index/HOSP 9088-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9088-1.jpg" data-lightbox="9088"></a>
+						<a href="Index/HOSP 9088-2.jpg" data-lightbox="9088"></a>
+						<a href="Index/HOSP 9088-3.jpg" data-lightbox="9088"></a>
+						<a href="Index/HOSP 9088-4.jpg" data-lightbox="9088"></a>
+						<a href="Index/HOSP 9088-5.jpg" data-lightbox="9088"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Elateridae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9125-0.jpg" data-lightbox="9125">
+					<img class="example-image" src="Index/HOSP 9125-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9125-1.jpg" data-lightbox="9125"></a>
+						<a href="Index/HOSP 9125-2.jpg" data-lightbox="9125"></a>
+						<a href="Index/HOSP 9125-3.jpg" data-lightbox="9125"></a>
+						<a href="Index/HOSP 9125-4.jpg" data-lightbox="9125"></a>
+						<a href="Index/HOSP 9125-5.jpg" data-lightbox="9125"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Chariessa pilosa</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9129-0.jpg" data-lightbox="9129">
+					<img class="example-image" src="Index/HOSP 9129-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9129-1.jpg" data-lightbox="9129"></a>
+						<a href="Index/HOSP 9129-2.jpg" data-lightbox="9129"></a>
+						<a href="Index/HOSP 9129-3.jpg" data-lightbox="9129"></a>
+						<a href="Index/HOSP 9129-4.jpg" data-lightbox="9129"></a>
+						<a href="Index/HOSP 9129-5.jpg" data-lightbox="9129"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Clerus sp.?</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9131-0.jpg" data-lightbox="9131">
+					<img class="example-image" src="Index/HOSP 9131-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9131-1.jpg" data-lightbox="9131"></a>
+						<a href="Index/HOSP 9131-2.jpg" data-lightbox="9131"></a>
+						<a href="Index/HOSP 9131-3.jpg" data-lightbox="9131"></a>
+						<a href="Index/HOSP 9131-4.jpg" data-lightbox="9131"></a>
+						<a href="Index/HOSP 9131-5.jpg" data-lightbox="9131"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cleridae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9133-0.jpg" data-lightbox="9133">
+					<img class="example-image" src="Index/HOSP 9133-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9133-1.jpg" data-lightbox="9133"></a>
+						<a href="Index/HOSP 9133-2.jpg" data-lightbox="9133"></a>
+						<a href="Index/HOSP 9133-3.jpg" data-lightbox="9133"></a>
+						<a href="Index/HOSP 9133-4.jpg" data-lightbox="9133"></a>
+						<a href="Index/HOSP 9133-5.jpg" data-lightbox="9133"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Chrysobothris salicis</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9138-0.jpg" data-lightbox="9138">
+					<img class="example-image" src="Index/HOSP 9138-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9138-1.jpg" data-lightbox="9138"></a>
+						<a href="Index/HOSP 9138-2.jpg" data-lightbox="9138"></a>
+						<a href="Index/HOSP 9138-3.jpg" data-lightbox="9138"></a>
+						<a href="Index/HOSP 9138-4.jpg" data-lightbox="9138"></a>
+						<a href="Index/HOSP 9138-5.jpg" data-lightbox="9138"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Chalcophora virginieusis</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9592-0.jpg" data-lightbox="9592">
+					<img class="example-image" src="Index/HOSP 9592-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9592-1.jpg" data-lightbox="9592"></a>
+						<a href="Index/HOSP 9592-2.jpg" data-lightbox="9592"></a>
+						<a href="Index/HOSP 9592-3.jpg" data-lightbox="9592"></a>
+						<a href="Index/HOSP 9592-4.jpg" data-lightbox="9592"></a>
+						<a href="Index/HOSP 9592-5.jpg" data-lightbox="9592"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Epicauta murina</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9593-0.jpg" data-lightbox="9593">
+					<img class="example-image" src="Index/HOSP 9593-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9593-1.jpg" data-lightbox="9593"></a>
+						<a href="Index/HOSP 9593-2.jpg" data-lightbox="9593"></a>
+						<a href="Index/HOSP 9593-3.jpg" data-lightbox="9593"></a>
+						<a href="Index/HOSP 9593-4.jpg" data-lightbox="9593"></a>
+						<a href="Index/HOSP 9593-5.jpg" data-lightbox="9593"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Epicauta murina</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9594-0.jpg" data-lightbox="9594">
+					<img class="example-image" src="Index/HOSP 9594-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9594-1.jpg" data-lightbox="9594"></a>
+						<a href="Index/HOSP 9594-2.jpg" data-lightbox="9594"></a>
+						<a href="Index/HOSP 9594-3.jpg" data-lightbox="9594"></a>
+						<a href="Index/HOSP 9594-4.jpg" data-lightbox="9594"></a>
+						<a href="Index/HOSP 9594-5.jpg" data-lightbox="9594"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Meloe sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9595-0.jpg" data-lightbox="9595">
+					<img class="example-image" src="Index/HOSP 9595-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9595-1.jpg" data-lightbox="9595"></a>
+						<a href="Index/HOSP 9595-2.jpg" data-lightbox="9595"></a>
+						<a href="Index/HOSP 9595-3.jpg" data-lightbox="9595"></a>
+						<a href="Index/HOSP 9595-4.jpg" data-lightbox="9595"></a>
+						<a href="Index/HOSP 9595-5.jpg" data-lightbox="9595"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">?</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9596-0.jpg" data-lightbox="9596">
+					<img class="example-image" src="Index/HOSP 9596-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9596-1.jpg" data-lightbox="9596"></a>
+						<a href="Index/HOSP 9596-2.jpg" data-lightbox="9596"></a>
+						<a href="Index/HOSP 9596-3.jpg" data-lightbox="9596"></a>
+						<a href="Index/HOSP 9596-4.jpg" data-lightbox="9596"></a>
+						<a href="Index/HOSP 9596-5.jpg" data-lightbox="9596"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Epicauta lemniscata</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9597-0.jpg" data-lightbox="9597">
+					<img class="example-image" src="Index/HOSP 9597-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9597-1.jpg" data-lightbox="9597"></a>
+						<a href="Index/HOSP 9597-2.jpg" data-lightbox="9597"></a>
+						<a href="Index/HOSP 9597-3.jpg" data-lightbox="9597"></a>
+						<a href="Index/HOSP 9597-4.jpg" data-lightbox="9597"></a>
+						<a href="Index/HOSP 9597-5.jpg" data-lightbox="9597"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Epicauta lemniscata</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9605-0.jpg" data-lightbox="9605">
+					<img class="example-image" src="Index/HOSP 9605-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9605-1.jpg" data-lightbox="9605"></a>
+						<a href="Index/HOSP 9605-2.jpg" data-lightbox="9605"></a>
+						<a href="Index/HOSP 9605-3.jpg" data-lightbox="9605"></a>
+						<a href="Index/HOSP 9605-4.jpg" data-lightbox="9605"></a>
+						<a href="Index/HOSP 9605-5.jpg" data-lightbox="9605"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">?</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9641-0.jpg" data-lightbox="9641">
+					<img class="example-image" src="Index/HOSP 9641-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9641-1.jpg" data-lightbox="9641"></a>
+						<a href="Index/HOSP 9641-2.jpg" data-lightbox="9641"></a>
+						<a href="Index/HOSP 9641-3.jpg" data-lightbox="9641"></a>
+						<a href="Index/HOSP 9641-4.jpg" data-lightbox="9641"></a>
+						<a href="Index/HOSP 9641-5.jpg" data-lightbox="9641"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Pseudolucanus placidus</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9643-0.jpg" data-lightbox="9643">
+					<img class="example-image" src="Index/HOSP 9643-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9643-1.jpg" data-lightbox="9643"></a>
+						<a href="Index/HOSP 9643-2.jpg" data-lightbox="9643"></a>
+						<a href="Index/HOSP 9643-3.jpg" data-lightbox="9643"></a>
+						<a href="Index/HOSP 9643-4.jpg" data-lightbox="9643"></a>
+						<a href="Index/HOSP 9643-5.jpg" data-lightbox="9643"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Pseudolucanus cyreolus</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9644-0.jpg" data-lightbox="9644">
+					<img class="example-image" src="Index/HOSP 9644-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9644-1.jpg" data-lightbox="9644"></a>
+						<a href="Index/HOSP 9644-2.jpg" data-lightbox="9644"></a>
+						<a href="Index/HOSP 9644-3.jpg" data-lightbox="9644"></a>
+						<a href="Index/HOSP 9644-4.jpg" data-lightbox="9644"></a>
+						<a href="Index/HOSP 9644-5.jpg" data-lightbox="9644"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Coleoptera sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9645-0.jpg" data-lightbox="9645">
+					<img class="example-image" src="Index/HOSP 9645-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9645-1.jpg" data-lightbox="9645"></a>
+						<a href="Index/HOSP 9645-2.jpg" data-lightbox="9645"></a>
+						<a href="Index/HOSP 9645-3.jpg" data-lightbox="9645"></a>
+						<a href="Index/HOSP 9645-4.jpg" data-lightbox="9645"></a>
+						<a href="Index/HOSP 9645-5.jpg" data-lightbox="9645"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Lucanidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9647-0.jpg" data-lightbox="9647">
+					<img class="example-image" src="Index/HOSP 9647-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9647-1.jpg" data-lightbox="9647"></a>
+						<a href="Index/HOSP 9647-2.jpg" data-lightbox="9647"></a>
+						<a href="Index/HOSP 9647-3.jpg" data-lightbox="9647"></a>
+						<a href="Index/HOSP 9647-4.jpg" data-lightbox="9647"></a>
+						<a href="Index/HOSP 9647-5.jpg" data-lightbox="9647"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Popilius disjunctus</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9655-0.jpg" data-lightbox="9655">
+					<img class="example-image" src="Index/HOSP 9655-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9655-1.jpg" data-lightbox="9655"></a>
+						<a href="Index/HOSP 9655-2.jpg" data-lightbox="9655"></a>
+						<a href="Index/HOSP 9655-3.jpg" data-lightbox="9655"></a>
+						<a href="Index/HOSP 9655-4.jpg" data-lightbox="9655"></a>
+						<a href="Index/HOSP 9655-5.jpg" data-lightbox="9655"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">?</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9692-0.jpg" data-lightbox="9692">
+					<img class="example-image" src="Index/HOSP 9692-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9692-1.jpg" data-lightbox="9692"></a>
+						<a href="Index/HOSP 9692-2.jpg" data-lightbox="9692"></a>
+						<a href="Index/HOSP 9692-3.jpg" data-lightbox="9692"></a>
+						<a href="Index/HOSP 9692-4.jpg" data-lightbox="9692"></a>
+						<a href="Index/HOSP 9692-5.jpg" data-lightbox="9692"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cotinus nitida</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9693-0.jpg" data-lightbox="9693">
+					<img class="example-image" src="Index/HOSP 9693-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9693-1.jpg" data-lightbox="9693"></a>
+						<a href="Index/HOSP 9693-2.jpg" data-lightbox="9693"></a>
+						<a href="Index/HOSP 9693-3.jpg" data-lightbox="9693"></a>
+						<a href="Index/HOSP 9001-4.jpg" data-lightbox="9693"></a>
+						<a href="Index/HOSP 9693-5.jpg" data-lightbox="9693"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Strategus anteaus</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9695-0.jpg" data-lightbox="9695">
+					<img class="example-image" src="Index/HOSP 9695-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9695-1.jpg" data-lightbox="9695"></a>
+						<a href="Index/HOSP 9695-2.jpg" data-lightbox="9695"></a>
+						<a href="Index/HOSP 9695-3.jpg" data-lightbox="9695"></a>
+						<a href="Index/HOSP 9695-4.jpg" data-lightbox="9695"></a>
+						<a href="Index/HOSP 9695-5.jpg" data-lightbox="9695"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Scarabeidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9698-0.jpg" data-lightbox="9698">
+					<img class="example-image" src="Index/HOSP 9698-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9698-1.jpg" data-lightbox="9698"></a>
+						<a href="Index/HOSP 9698-2.jpg" data-lightbox="9698"></a>
+						<a href="Index/HOSP 9698-3.jpg" data-lightbox="9698"></a>
+						<a href="Index/HOSP 9698-4.jpg" data-lightbox="9698"></a>
+						<a href="Index/HOSP 9698-5.jpg" data-lightbox="9698"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Pelidnota punctata</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9707-0.jpg" data-lightbox="9707">
+					<img class="example-image" src="Index/HOSP 9707-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9707-1.jpg" data-lightbox="9707"></a>
+						<a href="Index/HOSP 9707-2.jpg" data-lightbox="9707"></a>
+						<a href="Index/HOSP 9707-3.jpg" data-lightbox="9707"></a>
+						<a href="Index/HOSP 9707-4.jpg" data-lightbox="9707"></a>
+						<a href="Index/HOSP 9707-5.jpg" data-lightbox="9707"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Dynastes tityus</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9708-0.jpg" data-lightbox="9708">
+					<img class="example-image" src="Index/HOSP 9708-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9708-1.jpg" data-lightbox="9708"></a>
+						<a href="Index/HOSP 9708-2.jpg" data-lightbox="9708"></a>
+						<a href="Index/HOSP 9708-3.jpg" data-lightbox="9708"></a>
+						<a href="Index/HOSP 9708-4.jpg" data-lightbox="9708"></a>
+						<a href="Index/HOSP 9708-5.jpg" data-lightbox="9708"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Dynastes tityus</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9709-0.jpg" data-lightbox="9709">
+					<img class="example-image" src="Index/HOSP 9709-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9709-1.jpg" data-lightbox="9709"></a>
+						<a href="Index/HOSP 9709-2.jpg" data-lightbox="9709"></a>
+						<a href="Index/HOSP 9709-3.jpg" data-lightbox="9709"></a>
+						<a href="Index/HOSP 9709-4.jpg" data-lightbox="9709"></a>
+						<a href="Index/HOSP 9709-5.jpg" data-lightbox="9709"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Scolopendra obscura</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9710-0.jpg" data-lightbox="9710">
+					<img class="example-image" src="Index/HOSP 9710-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9710-1.jpg" data-lightbox="9710"></a>
+						<a href="Index/HOSP 9710-2.jpg" data-lightbox="9710"></a>
+						<a href="Index/HOSP 9710-3.jpg" data-lightbox="9710"></a>
+						<a href="Index/HOSP 9710-4.jpg" data-lightbox="9710"></a>
+						<a href="Index/HOSP 9710-5.jpg" data-lightbox="9710"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Pinotus carolinus</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9711-0.jpg" data-lightbox="9711">
+					<img class="example-image" src="Index/HOSP 9711-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9711-1.jpg" data-lightbox="9711"></a>
+						<a href="Index/HOSP 9711-2.jpg" data-lightbox="9711"></a>
+						<a href="Index/HOSP 9711-3.jpg" data-lightbox="9711"></a>
+						<a href="Index/HOSP 9711-4.jpg" data-lightbox="9711"></a>
+						<a href="Index/HOSP 9711-5.jpg" data-lightbox="9711"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Pinotus carolinus</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9712-0.jpg" data-lightbox="9712">
+					<img class="example-image" src="Index/HOSP 9712-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9712-1.jpg" data-lightbox="9712"></a>
+						<a href="Index/HOSP 9712-2.jpg" data-lightbox="9712"></a>
+						<a href="Index/HOSP 9712-3.jpg" data-lightbox="9712"></a>
+						<a href="Index/HOSP 9712-4.jpg" data-lightbox="9712"></a>
+						<a href="Index/HOSP 9712-5.jpg" data-lightbox="9712"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Scarabeidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9713-0.jpg" data-lightbox="9713">
+					<img class="example-image" src="Index/HOSP 9713-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9713-1.jpg" data-lightbox="9713"></a>
+						<a href="Index/HOSP 9713-2.jpg" data-lightbox="9713"></a>
+						<a href="Index/HOSP 9713-3.jpg" data-lightbox="9713"></a>
+						<a href="Index/HOSP 9713-4.jpg" data-lightbox="9713"></a>
+						<a href="Index/HOSP 9713-5.jpg" data-lightbox="9713"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Scarabeidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9714-0.jpg" data-lightbox="9714">
+					<img class="example-image" src="Index/HOSP 9714-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9714-1.jpg" data-lightbox="9714"></a>
+						<a href="Index/HOSP 9714-2.jpg" data-lightbox="9714"></a>
+						<a href="Index/HOSP 9714-3.jpg" data-lightbox="9714"></a>
+						<a href="Index/HOSP 9714-4.jpg" data-lightbox="9714"></a>
+						<a href="Index/HOSP 9714-5.jpg" data-lightbox="9714"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Scarabeidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9715-0.jpg" data-lightbox="9715">
+					<img class="example-image" src="Index/HOSP 9715-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9715-1.jpg" data-lightbox="9715"></a>
+						<a href="Index/HOSP 9715-2.jpg" data-lightbox="9715"></a>
+						<a href="Index/HOSP 9715-3.jpg" data-lightbox="9715"></a>
+						<a href="Index/HOSP 9715-4.jpg" data-lightbox="9715"></a>
+						<a href="Index/HOSP 9715-5.jpg" data-lightbox="9715"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Scarabeidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9717-0.jpg" data-lightbox="9717">
+					<img class="example-image" src="Index/HOSP 9717-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9717-1.jpg" data-lightbox="9717"></a>
+						<a href="Index/HOSP 9717-2.jpg" data-lightbox="9717"></a>
+						<a href="Index/HOSP 9717-3.jpg" data-lightbox="9717"></a>
+						<a href="Index/HOSP 9717-4.jpg" data-lightbox="9717"></a>
+						<a href="Index/HOSP 9717-5.jpg" data-lightbox="9717"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Scarabeidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9718-0.jpg" data-lightbox="9718">
+					<img class="example-image" src="Index/HOSP 9718-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9718-1.jpg" data-lightbox="9718"></a>
+						<a href="Index/HOSP 9718-2.jpg" data-lightbox="9718"></a>
+						<a href="Index/HOSP 9718-3.jpg" data-lightbox="9718"></a>
+						<a href="Index/HOSP 9718-4.jpg" data-lightbox="9718"></a>
+						<a href="Index/HOSP 9718-5.jpg" data-lightbox="9718"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Scarabeidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9726-0.jpg" data-lightbox="9726">
+					<img class="example-image" src="Index/HOSP 9726-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9726-1.jpg" data-lightbox="9726"></a>
+						<a href="Index/HOSP 9726-2.jpg" data-lightbox="9726"></a>
+						<a href="Index/HOSP 9726-3.jpg" data-lightbox="9726"></a>
+						<a href="Index/HOSP 9726-4.jpg" data-lightbox="9726"></a>
+						<a href="Index/HOSP 9726-5.jpg" data-lightbox="9726"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Strategus antaeus</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9727-0.jpg" data-lightbox="9727">
+					<img class="example-image" src="Index/HOSP 9727-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9727-1.jpg" data-lightbox="9727"></a>
+						<a href="Index/HOSP 9727-2.jpg" data-lightbox="9727"></a>
+						<a href="Index/HOSP 9727-3.jpg" data-lightbox="9727"></a>
+						<a href="Index/HOSP 9727-4.jpg" data-lightbox="9727"></a>
+						<a href="Index/HOSP 9727-5.jpg" data-lightbox="9727"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Strategus antaeus</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9738-0.jpg" data-lightbox="9738">
+					<img class="example-image" src="Index/HOSP 9738-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9738-1.jpg" data-lightbox="9738"></a>
+						<a href="Index/HOSP 9738-2.jpg" data-lightbox="9738"></a>
+						<a href="Index/HOSP 9738-3.jpg" data-lightbox="9738"></a>
+						<a href="Index/HOSP 9738-4.jpg" data-lightbox="9738"></a>
+						<a href="Index/HOSP 9738-5.jpg" data-lightbox="9738"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Scarabeidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9739-0.jpg" data-lightbox="9739">
+					<img class="example-image" src="Index/HOSP 9739-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9739-1.jpg" data-lightbox="9739"></a>
+						<a href="Index/HOSP 9739-2.jpg" data-lightbox="9739"></a>
+						<a href="Index/HOSP 9739-3.jpg" data-lightbox="9739"></a>
+						<a href="Index/HOSP 9739-4.jpg" data-lightbox="9739"></a>
+						<a href="Index/HOSP 9739-5.jpg" data-lightbox="9739"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Trichiotinus piger</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9742-0.jpg" data-lightbox="9742">
+					<img class="example-image" src="Index/HOSP 9742-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9742-1.jpg" data-lightbox="9742"></a>
+						<a href="Index/HOSP 9742-2.jpg" data-lightbox="9742"></a>
+						<a href="Index/HOSP 9742-3.jpg" data-lightbox="9742"></a>
+						<a href="Index/HOSP 9742-4.jpg" data-lightbox="9742"></a>
+						<a href="Index/HOSP 9742-5.jpg" data-lightbox="9742"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Scarabeidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9743-0.jpg" data-lightbox="9743">
+					<img class="example-image" src="Index/HOSP 9743-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9743-1.jpg" data-lightbox="9743"></a>
+						<a href="Index/HOSP 9743-2.jpg" data-lightbox="9743"></a>
+						<a href="Index/HOSP 9743-3.jpg" data-lightbox="9743"></a>
+						<a href="Index/HOSP 9743-4.jpg" data-lightbox="9743"></a>
+						<a href="Index/HOSP 9743-5.jpg" data-lightbox="9743"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Scarabeidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9746-0.jpg" data-lightbox="9746">
+					<img class="example-image" src="Index/HOSP 9746-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9746-1.jpg" data-lightbox="9746"></a>
+						<a href="Index/HOSP 9746-2.jpg" data-lightbox="9746"></a>
+						<a href="Index/HOSP 9746-3.jpg" data-lightbox="9746"></a>
+						<a href="Index/HOSP 9746-4.jpg" data-lightbox="9746"></a>
+						<a href="Index/HOSP 9746-5.jpg" data-lightbox="9746"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cerambycidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9748-0.jpg" data-lightbox="9748">
+					<img class="example-image" src="Index/HOSP 9748-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9748-1.jpg" data-lightbox="9748"></a>
+						<a href="Index/HOSP 9748-2.jpg" data-lightbox="9748"></a>
+						<a href="Index/HOSP 9748-3.jpg" data-lightbox="9748"></a>
+						<a href="Index/HOSP 9748-4.jpg" data-lightbox="9748"></a>
+						<a href="Index/HOSP 9748-5.jpg" data-lightbox="9748"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cerambycidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9750-0.jpg" data-lightbox="9750">
+					<img class="example-image" src="Index/HOSP 9750-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9750-1.jpg" data-lightbox="9750"></a>
+						<a href="Index/HOSP 9750-2.jpg" data-lightbox="9750"></a>
+						<a href="Index/HOSP 9750-3.jpg" data-lightbox="9750"></a>
+						<a href="Index/HOSP 9750-4.jpg" data-lightbox="9750"></a>
+						<a href="Index/HOSP 9750-5.jpg" data-lightbox="9750"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Prionus sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9751-0.jpg" data-lightbox="9751">
+					<img class="example-image" src="Index/HOSP 9751-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9751-1.jpg" data-lightbox="9751"></a>
+						<a href="Index/HOSP 9751-2.jpg" data-lightbox="9751"></a>
+						<a href="Index/HOSP 9751-3.jpg" data-lightbox="9751"></a>
+						<a href="Index/HOSP 9751-4.jpg" data-lightbox="9751"></a>
+						<a href="Index/HOSP 9751-5.jpg" data-lightbox="9751"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cerambycidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9752-0.jpg" data-lightbox="9752">
+					<img class="example-image" src="Index/HOSP 9752-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9752-1.jpg" data-lightbox="9752"></a>
+						<a href="Index/HOSP 9752-2.jpg" data-lightbox="9752"></a>
+						<a href="Index/HOSP 9752-3.jpg" data-lightbox="9752"></a>
+						<a href="Index/HOSP 9752-4.jpg" data-lightbox="9752"></a>
+						<a href="Index/HOSP 9752-5.jpg" data-lightbox="9752"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cerambycidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9755-0.jpg" data-lightbox="9755">
+					<img class="example-image" src="Index/HOSP 9755-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9755-1.jpg" data-lightbox="9755"></a>
+						<a href="Index/HOSP 9755-2.jpg" data-lightbox="9755"></a>
+						<a href="Index/HOSP 9755-3.jpg" data-lightbox="9755"></a>
+						<a href="Index/HOSP 9755-4.jpg" data-lightbox="9755"></a>
+						<a href="Index/HOSP 9755-5.jpg" data-lightbox="9755"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cerambycidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9756-0.jpg" data-lightbox="9756">
+					<img class="example-image" src="Index/HOSP 9756-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9756-1.jpg" data-lightbox="9756"></a>
+						<a href="Index/HOSP 9756-2.jpg" data-lightbox="9756"></a>
+						<a href="Index/HOSP 9756-3.jpg" data-lightbox="9756"></a>
+						<a href="Index/HOSP 9756-4.jpg" data-lightbox="9756"></a>
+						<a href="Index/HOSP 9756-5.jpg" data-lightbox="9756"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cerambycidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9757-0.jpg" data-lightbox="9757">
+					<img class="example-image" src="Index/HOSP 9757-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9757-1.jpg" data-lightbox="9757"></a>
+						<a href="Index/HOSP 9757-2.jpg" data-lightbox="9757"></a>
+						<a href="Index/HOSP 9757-3.jpg" data-lightbox="9757"></a>
+						<a href="Index/HOSP 9757-4.jpg" data-lightbox="9757"></a>
+						<a href="Index/HOSP 9757-5.jpg" data-lightbox="9757"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cerambycidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9758-0.jpg" data-lightbox="9758">
+					<img class="example-image" src="Index/HOSP 9758-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9758-1.jpg" data-lightbox="9758"></a>
+						<a href="Index/HOSP 9758-2.jpg" data-lightbox="9758"></a>
+						<a href="Index/HOSP 9758-3.jpg" data-lightbox="9758"></a>
+						<a href="Index/HOSP 9758-4.jpg" data-lightbox="9758"></a>
+						<a href="Index/HOSP 9758-5.jpg" data-lightbox="9758"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Saperda cretata</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9759-0.jpg" data-lightbox="9759">
+					<img class="example-image" src="Index/HOSP 9759-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9759-1.jpg" data-lightbox="9759"></a>
+						<a href="Index/HOSP 9759-2.jpg" data-lightbox="9759"></a>
+						<a href="Index/HOSP 9759-3.jpg" data-lightbox="9759"></a>
+						<a href="Index/HOSP 9759-4.jpg" data-lightbox="9759"></a>
+						<a href="Index/HOSP 9759-5.jpg" data-lightbox="9759"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cerambycidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9760-0.jpg" data-lightbox="9760">
+					<img class="example-image" src="Index/HOSP 9760-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9760-1.jpg" data-lightbox="9760"></a>
+						<a href="Index/HOSP 9760-2.jpg" data-lightbox="9760"></a>
+						<a href="Index/HOSP 9760-3.jpg" data-lightbox="9760"></a>
+						<a href="Index/HOSP 9760-4.jpg" data-lightbox="9760"></a>
+						<a href="Index/HOSP 9760-5.jpg" data-lightbox="9760"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cerambycidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9770-0.jpg" data-lightbox="9770">
+					<img class="example-image" src="Index/HOSP 9770-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9770-1.jpg" data-lightbox="9770"></a>
+						<a href="Index/HOSP 9770-2.jpg" data-lightbox="9770"></a>
+						<a href="Index/HOSP 9770-3.jpg" data-lightbox="9770"></a>
+						<a href="Index/HOSP 9770-4.jpg" data-lightbox="9770"></a>
+						<a href="Index/HOSP 9770-5.jpg" data-lightbox="9770"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Leptura sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9772-0.jpg" data-lightbox="9772">
+					<img class="example-image" src="Index/HOSP 9772-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9772-1.jpg" data-lightbox="9772"></a>
+						<a href="Index/HOSP 9772-2.jpg" data-lightbox="9772"></a>
+						<a href="Index/HOSP 9772-3.jpg" data-lightbox="9772"></a>
+						<a href="Index/HOSP 9772-4.jpg" data-lightbox="9772"></a>
+						<a href="Index/HOSP 9772-5.jpg" data-lightbox="9772"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cerambycidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9774-0.jpg" data-lightbox="9774">
+					<img class="example-image" src="Index/HOSP 9774-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9774-1.jpg" data-lightbox="9774"></a>
+						<a href="Index/HOSP 9774-2.jpg" data-lightbox="9774"></a>
+						<a href="Index/HOSP 9774-3.jpg" data-lightbox="9774"></a>
+						<a href="Index/HOSP 9774-4.jpg" data-lightbox="9774"></a>
+						<a href="Index/HOSP 9774-5.jpg" data-lightbox="9774"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Ophistomis sp.?</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9778-0.jpg" data-lightbox="9778">
+					<img class="example-image" src="Index/HOSP 9778-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9778-1.jpg" data-lightbox="9778"></a>
+						<a href="Index/HOSP 9778-2.jpg" data-lightbox="9778"></a>
+						<a href="Index/HOSP 9778-3.jpg" data-lightbox="9778"></a>
+						<a href="Index/HOSP 9778-4.jpg" data-lightbox="9778"></a>
+						<a href="Index/HOSP 9778-5.jpg" data-lightbox="9778"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Xylotrechus sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9781-0.jpg" data-lightbox="9781">
+					<img class="example-image" src="Index/HOSP 9781-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9781-1.jpg" data-lightbox="9781"></a>
+						<a href="Index/HOSP 9781-2.jpg" data-lightbox="9781"></a>
+						<a href="Index/HOSP 9781-3.jpg" data-lightbox="9781"></a>
+						<a href="Index/HOSP 9781-4.jpg" data-lightbox="9781"></a>
+						<a href="Index/HOSP 9781-5.jpg" data-lightbox="9781"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cerambycidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9786-0.jpg" data-lightbox="9786">
+					<img class="example-image" src="Index/HOSP 9786-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9786-1.jpg" data-lightbox="9786"></a>
+						<a href="Index/HOSP 9786-2.jpg" data-lightbox="9786"></a>
+						<a href="Index/HOSP 9786-3.jpg" data-lightbox="9786"></a>
+						<a href="Index/HOSP 9786-4.jpg" data-lightbox="9786"></a>
+						<a href="Index/HOSP 9786-5.jpg" data-lightbox="9786"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cerambycidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9798-0.jpg" data-lightbox="9798">
+					<img class="example-image" src="Index/HOSP 9798-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9798-1.jpg" data-lightbox="9798"></a>
+						<a href="Index/HOSP 9798-2.jpg" data-lightbox="9798"></a>
+						<a href="Index/HOSP 9798-3.jpg" data-lightbox="9798"></a>
+						<a href="Index/HOSP 9798-4.jpg" data-lightbox="9798"></a>
+						<a href="Index/HOSP 9798-5.jpg" data-lightbox="9798"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cerambycidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9806-0.jpg" data-lightbox="9806">
+					<img class="example-image" src="Index/HOSP 9806-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9806-1.jpg" data-lightbox="9806"></a>
+						<a href="Index/HOSP 9806-2.jpg" data-lightbox="9806"></a>
+						<a href="Index/HOSP 9806-3.jpg" data-lightbox="9806"></a>
+						<a href="Index/HOSP 9806-4.jpg" data-lightbox="9806"></a>
+						<a href="Index/HOSP 9806-5.jpg" data-lightbox="9806"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cerambycidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9811-0.jpg" data-lightbox="9811">
+					<img class="example-image" src="Index/HOSP 9811-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9811-1.jpg" data-lightbox="9811"></a>
+						<a href="Index/HOSP 9811-2.jpg" data-lightbox="9811"></a>
+						<a href="Index/HOSP 9811-3.jpg" data-lightbox="9811"></a>
+						<a href="Index/HOSP 9811-4.jpg" data-lightbox="9811"></a>
+						<a href="Index/HOSP 9811-5.jpg" data-lightbox="9811"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cerambycidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9818-0.jpg" data-lightbox="9818">
+					<img class="example-image" src="Index/HOSP 9818-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9818-1.jpg" data-lightbox="9818"></a>
+						<a href="Index/HOSP 9818-2.jpg" data-lightbox="9818"></a>
+						<a href="Index/HOSP 9818-3.jpg" data-lightbox="9818"></a>
+						<a href="Index/HOSP 9818-4.jpg" data-lightbox="9818"></a>
+						<a href="Index/HOSP 9818-5.jpg" data-lightbox="9818"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cerambycidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9819-0.jpg" data-lightbox="9819">
+					<img class="example-image" src="Index/HOSP 9819-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9819-1.jpg" data-lightbox="9819"></a>
+						<a href="Index/HOSP 9819-2.jpg" data-lightbox="9819"></a>
+						<a href="Index/HOSP 9819-3.jpg" data-lightbox="9819"></a>
+						<a href="Index/HOSP 9819-4.jpg" data-lightbox="9819"></a>
+						<a href="Index/HOSP 9819-5.jpg" data-lightbox="9819"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cerambycidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9820-0.jpg" data-lightbox="9820">
+					<img class="example-image" src="Index/HOSP 9820-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9820-1.jpg" data-lightbox="9820"></a>
+						<a href="Index/HOSP 9820-2.jpg" data-lightbox="9820"></a>
+						<a href="Index/HOSP 9820-3.jpg" data-lightbox="9820"></a>
+						<a href="Index/HOSP 9820-4.jpg" data-lightbox="9820"></a>
+						<a href="Index/HOSP 9820-5.jpg" data-lightbox="9820"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cerambycidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9821-0.jpg" data-lightbox="9821">
+					<img class="example-image" src="Index/HOSP 9821-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9821-1.jpg" data-lightbox="9821"></a>
+						<a href="Index/HOSP 9821-2.jpg" data-lightbox="9821"></a>
+						<a href="Index/HOSP 9821-3.jpg" data-lightbox="9821"></a>
+						<a href="Index/HOSP 9821-4.jpg" data-lightbox="9821"></a>
+						<a href="Index/HOSP 9821-5.jpg" data-lightbox="9821"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Leptinotarsa decimlineata</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9822-0.jpg" data-lightbox="9822">
+					<img class="example-image" src="Index/HOSP 9822-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9822-1.jpg" data-lightbox="9822"></a>
+						<a href="Index/HOSP 9822-2.jpg" data-lightbox="9822"></a>
+						<a href="Index/HOSP 9822-3.jpg" data-lightbox="9822"></a>
+						<a href="Index/HOSP 9822-4.jpg" data-lightbox="9822"></a>
+						<a href="Index/HOSP 9822-5.jpg" data-lightbox="9822"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Diabrotica undecimpunctata</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9831-0.jpg" data-lightbox="9831">
+					<img class="example-image" src="Index/HOSP 9831-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9831-1.jpg" data-lightbox="9831"></a>
+						<a href="Index/HOSP 9831-2.jpg" data-lightbox="9831"></a>
+						<a href="Index/HOSP 9831-3.jpg" data-lightbox="9831"></a>
+						<a href="Index/HOSP 9831-4.jpg" data-lightbox="9831"></a>
+						<a href="Index/HOSP 9831-5.jpg" data-lightbox="9831"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Chrysomela scripta</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9832-0.jpg" data-lightbox="9832">
+					<img class="example-image" src="Index/HOSP 9832-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9832-1.jpg" data-lightbox="9832"></a>
+						<a href="Index/HOSP 9832-2.jpg" data-lightbox="9832"></a>
+						<a href="Index/HOSP 9832-3.jpg" data-lightbox="9832"></a>
+						<a href="Index/HOSP 9832-4.jpg" data-lightbox="9832"></a>
+						<a href="Index/HOSP 9832-5.jpg" data-lightbox="9832"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cerotama trifurcata</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9833-0.jpg" data-lightbox="9833">
+					<img class="example-image" src="Index/HOSP 9833-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9833-1.jpg" data-lightbox="9833"></a>
+						<a href="Index/HOSP 9833-2.jpg" data-lightbox="9833"></a>
+						<a href="Index/HOSP 9833-3.jpg" data-lightbox="9833"></a>
+						<a href="Index/HOSP 9833-4.jpg" data-lightbox="9833"></a>
+						<a href="Index/HOSP 9833-5.jpg" data-lightbox="9833"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Chrysomelidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9849-0.jpg" data-lightbox="9849">
+					<img class="example-image" src="Index/HOSP 9849-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9849-1.jpg" data-lightbox="9849"></a>
+						<a href="Index/HOSP 9849-2.jpg" data-lightbox="9849"></a>
+						<a href="Index/HOSP 9849-3.jpg" data-lightbox="9849"></a>
+						<a href="Index/HOSP 9849-4.jpg" data-lightbox="9849"></a>
+						<a href="Index/HOSP 9849-5.jpg" data-lightbox="9849"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Chrysomelidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9854-0.jpg" data-lightbox="9854">
+					<img class="example-image" src="Index/HOSP 9854-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9854-1.jpg" data-lightbox="9854"></a>
+						<a href="Index/HOSP 9854-2.jpg" data-lightbox="9854"></a>
+						<a href="Index/HOSP 9854-3.jpg" data-lightbox="9854"></a>
+						<a href="Index/HOSP 9854-4.jpg" data-lightbox="9854"></a>
+						<a href="Index/HOSP 9854-5.jpg" data-lightbox="9854"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Chrysomelidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9857-0.jpg" data-lightbox="9857">
+					<img class="example-image" src="Index/HOSP 9857-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9857-1.jpg" data-lightbox="9857"></a>
+						<a href="Index/HOSP 9857-2.jpg" data-lightbox="9857"></a>
+						<a href="Index/HOSP 9857-3.jpg" data-lightbox="9857"></a>
+						<a href="Index/HOSP 9857-4.jpg" data-lightbox="9857"></a>
+						<a href="Index/HOSP 9857-5.jpg" data-lightbox="9857"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Chrysomelidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9858-0.jpg" data-lightbox="9858">
+					<img class="example-image" src="Index/HOSP 9858-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9858-1.jpg" data-lightbox="9858"></a>
+						<a href="Index/HOSP 9858-2.jpg" data-lightbox="9858"></a>
+						<a href="Index/HOSP 9858-3.jpg" data-lightbox="9858"></a>
+						<a href="Index/HOSP 9858-4.jpg" data-lightbox="9858"></a>
+						<a href="Index/HOSP 9858-5.jpg" data-lightbox="9858"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Chrysomelidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9864-0.jpg" data-lightbox="9864">
+					<img class="example-image" src="Index/HOSP 9864-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9864-1.jpg" data-lightbox="9864"></a>
+						<a href="Index/HOSP 9864-2.jpg" data-lightbox="9864"></a>
+						<a href="Index/HOSP 9864-3.jpg" data-lightbox="9864"></a>
+						<a href="Index/HOSP 9864-4.jpg" data-lightbox="9864"></a>
+						<a href="Index/HOSP 9864-5.jpg" data-lightbox="9864"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Arrhenodes minutus?</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9865-0.jpg" data-lightbox="9865">
+					<img class="example-image" src="Index/HOSP 9865-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9865-1.jpg" data-lightbox="9865"></a>
+						<a href="Index/HOSP 9865-2.jpg" data-lightbox="9865"></a>
+						<a href="Index/HOSP 9865-3.jpg" data-lightbox="9865"></a>
+						<a href="Index/HOSP 9865-4.jpg" data-lightbox="9865"></a>
+						<a href="Index/HOSP 9865-5.jpg" data-lightbox="9865"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Arrhenodes minutus?</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9866-0.jpg" data-lightbox="9866">
+					<img class="example-image" src="Index/HOSP 9866-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9866-1.jpg" data-lightbox="9866"></a>
+						<a href="Index/HOSP 9866-2.jpg" data-lightbox="9866"></a>
+						<a href="Index/HOSP 9866-3.jpg" data-lightbox="9866"></a>
+						<a href="Index/HOSP 9866-4.jpg" data-lightbox="9866"></a>
+						<a href="Index/HOSP 9866-5.jpg" data-lightbox="9866"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Anthribidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old invasive" data-cat="old invasive">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9867-0.jpg" data-lightbox="9867">
+					<img class="example-image" src="Index/HOSP 9867-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9867-1.jpg" data-lightbox="9867"></a>
+						<a href="Index/HOSP 9867-2.jpg" data-lightbox="9867"></a>
+						<a href="Index/HOSP 9867-3.jpg" data-lightbox="9867"></a>
+						<a href="Index/HOSP 9867-4.jpg" data-lightbox="9867"></a>
+						<a href="Index/HOSP 9867-5.jpg" data-lightbox="9867"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Rhynchitinae sp.</a>
+							<span class="text-category">Old, Invasive</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9877-0.jpg" data-lightbox="9877">
+					<img class="example-image" src="Index/HOSP 9877-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9877-1.jpg" data-lightbox="9877"></a>
+						<a href="Index/HOSP 9877-2.jpg" data-lightbox="9877"></a>
+						<a href="Index/HOSP 9877-3.jpg" data-lightbox="9877"></a>
+						<a href="Index/HOSP 9877-4.jpg" data-lightbox="9877"></a>
+						<a href="Index/HOSP 9877-5.jpg" data-lightbox="9877"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Curculionidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9879-0.jpg" data-lightbox="9879">
+					<img class="example-image" src="Index/HOSP 9879-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9879-1.jpg" data-lightbox="9879"></a>
+						<a href="Index/HOSP 9879-2.jpg" data-lightbox="9879"></a>
+						<a href="Index/HOSP 9879-3.jpg" data-lightbox="9879"></a>
+						<a href="Index/HOSP 9879-4.jpg" data-lightbox="9879"></a>
+						<a href="Index/HOSP 9879-5.jpg" data-lightbox="9879"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Curculionidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9882-0.jpg" data-lightbox="9882">
+					<img class="example-image" src="Index/HOSP 9882-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9882-1.jpg" data-lightbox="9882"></a>
+						<a href="Index/HOSP 9882-2.jpg" data-lightbox="9882"></a>
+						<a href="Index/HOSP 9882-3.jpg" data-lightbox="9882"></a>
+						<a href="Index/HOSP 9882-4.jpg" data-lightbox="9882"></a>
+						<a href="Index/HOSP 9882-5.jpg" data-lightbox="9882"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Curculionidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9884-0.jpg" data-lightbox="9884">
+					<img class="example-image" src="Index/HOSP 9884-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9884-1.jpg" data-lightbox="9884"></a>
+						<a href="Index/HOSP 9884-2.jpg" data-lightbox="9884"></a>
+						<a href="Index/HOSP 9884-3.jpg" data-lightbox="9884"></a>
+						<a href="Index/HOSP 9884-4.jpg" data-lightbox="9884"></a>
+						<a href="Index/HOSP 9884-5.jpg" data-lightbox="9884"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Curculionidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old invasive" data-cat="old invasive">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9913-0.jpg" data-lightbox="9913">
+					<img class="example-image" src="Index/HOSP 9913-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9913-1.jpg" data-lightbox="9913"></a>
+						<a href="Index/HOSP 9913-2.jpg" data-lightbox="9913"></a>
+						<a href="Index/HOSP 9913-3.jpg" data-lightbox="9913"></a>
+						<a href="Index/HOSP 9913-4.jpg" data-lightbox="9913"></a>
+						<a href="Index/HOSP 9913-5.jpg" data-lightbox="9913"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Dendroctonus terebrans</a>
+							<span class="text-category">Old, Invasive</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old invasive" data-cat="old invasive">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9914-0.jpg" data-lightbox="9914">
+					<img class="example-image" src="Index/HOSP 9914-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9914-1.jpg" data-lightbox="9914"></a>
+						<a href="Index/HOSP 9914-2.jpg" data-lightbox="9914"></a>
+						<a href="Index/HOSP 9914-3.jpg" data-lightbox="9914"></a>
+						<a href="Index/HOSP 9914-4.jpg" data-lightbox="9914"></a>
+						<a href="Index/HOSP 9914-5.jpg" data-lightbox="9914"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Dendroctonus terebrans</a>
+							<span class="text-category">Old, Invasive</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9920-0.jpg" data-lightbox="9920">
+					<img class="example-image" src="Index/HOSP 9920-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9920-1.jpg" data-lightbox="9920"></a>
+						<a href="Index/HOSP 9920-2.jpg" data-lightbox="9920"></a>
+						<a href="Index/HOSP 9920-3.jpg" data-lightbox="9920"></a>
+						<a href="Index/HOSP 9920-4.jpg" data-lightbox="9920"></a>
+						<a href="Index/HOSP 9920-5.jpg" data-lightbox="9920"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Megacephala virginica</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9921-0.jpg" data-lightbox="9921">
+					<img class="example-image" src="Index/HOSP 9921-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9921-1.jpg" data-lightbox="9921"></a>
+						<a href="Index/HOSP 9921-2.jpg" data-lightbox="9921"></a>
+						<a href="Index/HOSP 9921-3.jpg" data-lightbox="9921"></a>
+						<a href="Index/HOSP 9921-4.jpg" data-lightbox="9921"></a>
+						<a href="Index/HOSP 9921-5.jpg" data-lightbox="9921"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Megacephala virginica</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9922-0.jpg" data-lightbox="9922">
+					<img class="example-image" src="Index/HOSP 9922-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9922-1.jpg" data-lightbox="9922"></a>
+						<a href="Index/HOSP 9922-2.jpg" data-lightbox="9922"></a>
+						<a href="Index/HOSP 9922-3.jpg" data-lightbox="9922"></a>
+						<a href="Index/HOSP 9922-4.jpg" data-lightbox="9922"></a>
+						<a href="Index/HOSP 9922-5.jpg" data-lightbox="9922"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cicindela hybridis?</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9923-0.jpg" data-lightbox="9923">
+					<img class="example-image" src="Index/HOSP 9923-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9923-1.jpg" data-lightbox="9923"></a>
+						<a href="Index/HOSP 9923-2.jpg" data-lightbox="9923"></a>
+						<a href="Index/HOSP 9923-3.jpg" data-lightbox="9923"></a>
+						<a href="Index/HOSP 9923-4.jpg" data-lightbox="9923"></a>
+						<a href="Index/HOSP 9923-5.jpg" data-lightbox="9923"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Megacephala carolina</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9924-0.jpg" data-lightbox="9924">
+					<img class="example-image" src="Index/HOSP 9924-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9924-1.jpg" data-lightbox="9924"></a>
+						<a href="Index/HOSP 9924-2.jpg" data-lightbox="9924"></a>
+						<a href="Index/HOSP 9924-3.jpg" data-lightbox="9924"></a>
+						<a href="Index/HOSP 9924-4.jpg" data-lightbox="9924"></a>
+						<a href="Index/HOSP 9924-5.jpg" data-lightbox="9924"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cicindela sexguttata</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9925-0.jpg" data-lightbox="9925">
+					<img class="example-image" src="Index/HOSP 9925-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9925-1.jpg" data-lightbox="9925"></a>
+						<a href="Index/HOSP 9925-2.jpg" data-lightbox="9925"></a>
+						<a href="Index/HOSP 9925-3.jpg" data-lightbox="9925"></a>
+						<a href="Index/HOSP 9925-4.jpg" data-lightbox="9925"></a>
+						<a href="Index/HOSP 9925-5.jpg" data-lightbox="9925"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cicindela punctulata</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9926-0.jpg" data-lightbox="9926">
+					<img class="example-image" src="Index/HOSP 9926-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9926-1.jpg" data-lightbox="9926"></a>
+						<a href="Index/HOSP 9926-2.jpg" data-lightbox="9926"></a>
+						<a href="Index/HOSP 9926-3.jpg" data-lightbox="9926"></a>
+						<a href="Index/HOSP 9926-4.jpg" data-lightbox="9926"></a>
+						<a href="Index/HOSP 9926-5.jpg" data-lightbox="9926"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cicindela bipunctata</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9927-0.jpg" data-lightbox="9927">
+					<img class="example-image" src="Index/HOSP 9927-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9927-1.jpg" data-lightbox="9927"></a>
+						<a href="Index/HOSP 9927-2.jpg" data-lightbox="9927"></a>
+						<a href="Index/HOSP 9927-3.jpg" data-lightbox="9927"></a>
+						<a href="Index/HOSP 9927-4.jpg" data-lightbox="9927"></a>
+						<a href="Index/HOSP 9927-5.jpg" data-lightbox="9927"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Cicindela duodecimguttata</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9928-0.jpg" data-lightbox="9928">
+					<img class="example-image" src="Index/HOSP 9928-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9928-1.jpg" data-lightbox="9928"></a>
+						<a href="Index/HOSP 9928-2.jpg" data-lightbox="9928"></a>
+						<a href="Index/HOSP 9928-3.jpg" data-lightbox="9928"></a>
+						<a href="Index/HOSP 9928-4.jpg" data-lightbox="9928"></a>
+						<a href="Index/HOSP 9928-5.jpg" data-lightbox="9928"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Galetita janus</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9929-0.jpg" data-lightbox="9929">
+					<img class="example-image" src="Index/HOSP 9929-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9929-1.jpg" data-lightbox="9929"></a>
+						<a href="Index/HOSP 9929-2.jpg" data-lightbox="9929"></a>
+						<a href="Index/HOSP 9929-3.jpg" data-lightbox="9929"></a>
+						<a href="Index/HOSP 9929-4.jpg" data-lightbox="9929"></a>
+						<a href="Index/HOSP 9929-5.jpg" data-lightbox="9929"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Lebia fulmans</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9930-0.jpg" data-lightbox="9930">
+					<img class="example-image" src="Index/HOSP 9930-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9930-1.jpg" data-lightbox="9930"></a>
+						<a href="Index/HOSP 9930-2.jpg" data-lightbox="9930"></a>
+						<a href="Index/HOSP 9930-3.jpg" data-lightbox="9930"></a>
+						<a href="Index/HOSP 9930-4.jpg" data-lightbox="9930"></a>
+						<a href="Index/HOSP 9930-5.jpg" data-lightbox="9930"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Seaphinaotus fissicdis</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9931-0.jpg" data-lightbox="9931">
+					<img class="example-image" src="Index/HOSP 9931-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9931-1.jpg" data-lightbox="9931"></a>
+						<a href="Index/HOSP 9931-2.jpg" data-lightbox="9931"></a>
+						<a href="Index/HOSP 9931-3.jpg" data-lightbox="9931"></a>
+						<a href="Index/HOSP 9931-4.jpg" data-lightbox="9931"></a>
+						<a href="Index/HOSP 9931-5.jpg" data-lightbox="9931"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Casnonia pennsylvanica</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9932-0.jpg" data-lightbox="9932">
+					<img class="example-image" src="Index/HOSP 9932-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9932-1.jpg" data-lightbox="9932"></a>
+						<a href="Index/HOSP 9932-2.jpg" data-lightbox="9932"></a>
+						<a href="Index/HOSP 9932-3.jpg" data-lightbox="9932"></a>
+						<a href="Index/HOSP 9932-4.jpg" data-lightbox="9932"></a>
+						<a href="Index/HOSP 9932-5.jpg" data-lightbox="9932"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Penagaues fasciatus</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9933-0.jpg" data-lightbox="9933">
+					<img class="example-image" src="Index/HOSP 9933-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9933-1.jpg" data-lightbox="9933"></a>
+						<a href="Index/HOSP 9933-2.jpg" data-lightbox="9933"></a>
+						<a href="Index/HOSP 9933-3.jpg" data-lightbox="9933"></a>
+						<a href="Index/HOSP 9933-4.jpg" data-lightbox="9933"></a>
+						<a href="Index/HOSP 9933-5.jpg" data-lightbox="9933"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Brachynus sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9934-0.jpg" data-lightbox="9934">
+					<img class="example-image" src="Index/HOSP 9934-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9934-1.jpg" data-lightbox="9934"></a>
+						<a href="Index/HOSP 9934-2.jpg" data-lightbox="9934"></a>
+						<a href="Index/HOSP 9934-3.jpg" data-lightbox="9934"></a>
+						<a href="Index/HOSP 9934-4.jpg" data-lightbox="9934"></a>
+						<a href="Index/HOSP 9934-5.jpg" data-lightbox="9934"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Brachynus sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9935-0.jpg" data-lightbox="9935">
+					<img class="example-image" src="Index/HOSP 9935-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9935-1.jpg" data-lightbox="9935"></a>
+						<a href="Index/HOSP 9935-4.jpg" data-lightbox="9935"></a>
+						<a href="Index/HOSP 9935-5.jpg" data-lightbox="9935"></a>
+						<a href="Index/HOSP 9935-4.jpg" data-lightbox="9935"></a>
+						<a href="Index/HOSP 9935-5.jpg" data-lightbox="9935"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Brachynus sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9936-0.jpg" data-lightbox="9936">
+					<img class="example-image" src="Index/HOSP 9936-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9936-1.jpg" data-lightbox="9936"></a>
+						<a href="Index/HOSP 9936-2.jpg" data-lightbox="9936"></a>
+						<a href="Index/HOSP 9936-3.jpg" data-lightbox="9936"></a>
+						<a href="Index/HOSP 9936-4.jpg" data-lightbox="9936"></a>
+						<a href="Index/HOSP 9936-5.jpg" data-lightbox="9936"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Calosoma scrutator</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9937-0.jpg" data-lightbox="9937">
+					<img class="example-image" src="Index/HOSP 9937-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9937-1.jpg" data-lightbox="9937"></a>
+						<a href="Index/HOSP 9937-2.jpg" data-lightbox="9937"></a>
+						<a href="Index/HOSP 9937-3.jpg" data-lightbox="9937"></a>
+						<a href="Index/HOSP 9937-4.jpg" data-lightbox="9937"></a>
+						<a href="Index/HOSP 9937-5.jpg" data-lightbox="9937"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Calosoma scrutator</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9938-0.jpg" data-lightbox="9938">
+					<img class="example-image" src="Index/HOSP 9938-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9938-1.jpg" data-lightbox="9938"></a>
+						<a href="Index/HOSP 9938-2.jpg" data-lightbox="9938"></a>
+						<a href="Index/HOSP 9938-3.jpg" data-lightbox="9938"></a>
+						<a href="Index/HOSP 9938-4.jpg" data-lightbox="9938"></a>
+						<a href="Index/HOSP 9938-5.jpg" data-lightbox="9938"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Calosoma caronatum</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9939-0.jpg" data-lightbox="9939">
+					<img class="example-image" src="Index/HOSP 9939-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9939-1.jpg" data-lightbox="9939"></a>
+						<a href="Index/HOSP 9939-2.jpg" data-lightbox="9939"></a>
+						<a href="Index/HOSP 9939-3.jpg" data-lightbox="9939"></a>
+						<a href="Index/HOSP 9939-4.jpg" data-lightbox="9939"></a>
+						<a href="Index/HOSP 9939-5.jpg" data-lightbox="9939"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Calosoma calida</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9940-0.jpg" data-lightbox="9940">
+					<img class="example-image" src="Index/HOSP 9940-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9940-1.jpg" data-lightbox="9940"></a>
+						<a href="Index/HOSP 9940-2.jpg" data-lightbox="9940"></a>
+						<a href="Index/HOSP 9940-3.jpg" data-lightbox="9940"></a>
+						<a href="Index/HOSP 9940-4.jpg" data-lightbox="9940"></a>
+						<a href="Index/HOSP 9940-5.jpg" data-lightbox="9940"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Calosoma calida</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9941-0.jpg" data-lightbox="9941">
+					<img class="example-image" src="Index/HOSP 9941-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9941-1.jpg" data-lightbox="9941"></a>
+						<a href="Index/HOSP 9941-2.jpg" data-lightbox="9941"></a>
+						<a href="Index/HOSP 9941-3.jpg" data-lightbox="9941"></a>
+						<a href="Index/HOSP 9941-4.jpg" data-lightbox="9941"></a>
+						<a href="Index/HOSP 9941-5.jpg" data-lightbox="9941"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Calosoma frigidum</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9947-0.jpg" data-lightbox="9947">
+					<img class="example-image" src="Index/HOSP 9947-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9947-1.jpg" data-lightbox="9947"></a>
+						<a href="Index/HOSP 9947-2.jpg" data-lightbox="9947"></a>
+						<a href="Index/HOSP 9947-3.jpg" data-lightbox="9947"></a>
+						<a href="Index/HOSP 9947-4.jpg" data-lightbox="9947"></a>
+						<a href="Index/HOSP 9947-5.jpg" data-lightbox="9947"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Carabidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9948-0.jpg" data-lightbox="9948">
+					<img class="example-image" src="Index/HOSP 9948-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9948-1.jpg" data-lightbox="9948"></a>
+						<a href="Index/HOSP 9948-2.jpg" data-lightbox="9948"></a>
+						<a href="Index/HOSP 9948-3.jpg" data-lightbox="9948"></a>
+						<a href="Index/HOSP 9948-4.jpg" data-lightbox="9948"></a>
+						<a href="Index/HOSP 9948-5.jpg" data-lightbox="9948"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Carabidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9954-0.jpg" data-lightbox="9954">
+					<img class="example-image" src="Index/HOSP 9954-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9954-1.jpg" data-lightbox="9954"></a>
+						<a href="Index/HOSP 9954-2.jpg" data-lightbox="9954"></a>
+						<a href="Index/HOSP 9954-3.jpg" data-lightbox="9954"></a>
+						<a href="Index/HOSP 9954-4.jpg" data-lightbox="9954"></a>
+						<a href="Index/HOSP 9954-5.jpg" data-lightbox="9954"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Carabidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9961-0.jpg" data-lightbox="9961">
+					<img class="example-image" src="Index/HOSP 9961-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9961-1.jpg" data-lightbox="9961"></a>
+						<a href="Index/HOSP 9961-2.jpg" data-lightbox="9961"></a>
+						<a href="Index/HOSP 9961-3.jpg" data-lightbox="9961"></a>
+						<a href="Index/HOSP 9961-4.jpg" data-lightbox="9961"></a>
+						<a href="Index/HOSP 9961-5.jpg" data-lightbox="9961"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Carabidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9965-0.jpg" data-lightbox="9965">
+					<img class="example-image" src="Index/HOSP 9965-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9965-1.jpg" data-lightbox="9965"></a>
+						<a href="Index/HOSP 9965-2.jpg" data-lightbox="9965"></a>
+						<a href="Index/HOSP 9965-3.jpg" data-lightbox="9965"></a>
+						<a href="Index/HOSP 9965-4.jpg" data-lightbox="9965"></a>
+						<a href="Index/HOSP 9965-5.jpg" data-lightbox="9965"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Carabidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 9974-0.jpg" data-lightbox="9974">
+					<img class="example-image" src="Index/HOSP 9974-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 9974-1.jpg" data-lightbox="9974"></a>
+						<a href="Index/HOSP 9974-2.jpg" data-lightbox="9974"></a>
+						<a href="Index/HOSP 9974-3.jpg" data-lightbox="9974"></a>
+						<a href="Index/HOSP 9974-4.jpg" data-lightbox="9974"></a>
+						<a href="Index/HOSP 9974-5.jpg" data-lightbox="9974"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Carabidae sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 16606-0.jpg" data-lightbox="16606">
+					<img class="example-image" src="Index/HOSP 16606-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 16606-1.jpg" data-lightbox="16606"></a>
+						<a href="Index/HOSP 16606-2.jpg" data-lightbox="16606"></a>
+						<a href="Index/HOSP 16606-3.jpg" data-lightbox="16606"></a>
+						<a href="Index/HOSP 16606-4.jpg" data-lightbox="16606"></a>
+						<a href="Index/HOSP 16606-5.jpg" data-lightbox="16606"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Prionus sp.</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 16610-0.jpg" data-lightbox="16610">
+					<img class="example-image" src="Index/HOSP 16610-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 16610-1.jpg" data-lightbox="16610"></a>
+						<a href="Index/HOSP 16610-2.jpg" data-lightbox="16610"></a>
+						<a href="Index/HOSP 16610-3.jpg" data-lightbox="16610"></a>
+						<a href="Index/HOSP 16610-4.jpg" data-lightbox="16610"></a>
+						<a href="Index/HOSP 16610-5.jpg" data-lightbox="16610"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Buprestidae sp.?</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+<div class="portfolio old" data-cat="old">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index/HOSP 16611-0.jpg" data-lightbox="16611">
+					<img class="example-image" src="Index/HOSP 16611-0.jpg" alt="" /></a>
+						<a href="Index/HOSP 16611-1.jpg" data-lightbox="16611"></a>
+						<a href="Index/HOSP 16611-2.jpg" data-lightbox="16611"></a>
+						<a href="Index/HOSP 16611-3.jpg" data-lightbox="16611"></a>
+						<a href="Index/HOSP 16611-4.jpg" data-lightbox="16611"></a>
+						<a href="Index/HOSP 16611-5.jpg" data-lightbox="16611"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Buprestidae sp.?</a>
+							<span class="text-category">Old</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+
+
+
+
+
+
+
+<div class="portfolio new" data-cat="new">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index2/ASMSA 1-0.jpg" data-lightbox="1">
+					<img class="example-image" src="Index2/ASMSA 1-0.jpg" alt="" /></a>
+						<a href="Index2/ASMSA 1-1.jpg" data-lightbox="1"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Curculiondae Brachyrininae sp.</a>
+							<span class="text-category">New</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio new invasive" data-cat="new">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index2/ASMSA 2-0.jpg" data-lightbox="2">
+					<img class="example-image" src="Index2/ASMSA 2-0.jpg" alt="" /></a>
+						<a href="Index2/ASMSA 2-1.jpg" data-lightbox="2"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Harmonia axyridis</a>
+							<span class="text-category">New, Invasive</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio new" data-cat="new">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index2/ASMSA 3-0.jpg" data-lightbox="3">
+					<img class="example-image" src="Index2/ASMSA 3-0.jpg" alt="" /></a>
+						<a href="Index2/ASMSA 3-1.jpg" data-lightbox="3"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">?</a>
+							<span class="text-category">New</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio new" data-cat="new">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index2/ASMSA 4-0.jpg" data-lightbox="4">
+					<img class="example-image" src="Index2/ASMSA 4-0.jpg" alt="" /></a>
+						<a href="Index2/ASMSA 4-1.jpg" data-lightbox="4"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Dermaptera Labiidae sp.</a>
+							<span class="text-category">New</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio new" data-cat="new">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index2/ASMSA 5-0.jpg" data-lightbox="5">
+					<img class="example-image" src="Index2/ASMSA 5-0.jpg" alt="" /></a>
+						<a href="Index2/ASMSA 5-1.jpg" data-lightbox="5"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">?</a>
+							<span class="text-category">New</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio new" data-cat="new">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index2/ASMSA 6-0.jpg" data-lightbox="6">
+					<img class="example-image" src="Index2/ASMSA 6-0.jpg" alt="" /></a>
+						<a href="Index2/ASMSA 6-1.jpg" data-lightbox="6"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">?</a>
+							<span class="text-category">New</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio new" data-cat="new">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index2/ASMSA 7-0.jpg" data-lightbox="7">
+					<img class="example-image" src="Index2/ASMSA 7-0.jpg" alt="" /></a>
+						<a href="Index2/ASMSA 7-1.jpg" data-lightbox="7"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">C. Lucanidae sp.</a>
+							<span class="text-category">New</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio new" data-cat="new">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index2/ASMSA 8-0.jpg" data-lightbox="8">
+					<img class="example-image" src="Index2/ASMSA 8-0.jpg" alt="" /></a>
+						<a href="Index2/ASMSA 8-1.jpg" data-lightbox="8"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">?</a>
+							<span class="text-category">New</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio new" data-cat="new">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index2/ASMSA 9-0.jpg" data-lightbox="9">
+					<img class="example-image" src="Index2/ASMSA 9-0.jpg" alt="" /></a>
+						<a href="Index2/ASMSA 9-1.jpg" data-lightbox="9"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Bembidion rapidum</a>
+							<span class="text-category">New</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+<div class="portfolio new" data-cat="new">
+				<div class="portfolio-wrapper">	
+					<a class="example-image-link" href="Index2/ASMSA 10-0.jpg" data-lightbox="10">
+					<img class="example-image" src="Index2/ASMSA 10-0.jpg" alt="" /></a>
+						<a href="Index2/ASMSA 10-1.jpg" data-lightbox="10"></a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Systena frontalis?</a>
+							<span class="text-category">New</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+				<!--
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="https://img.clipartfox.com/1ff84fd69639ddc16b371998e26cef18_thumbnail-images-white_2560-1440.jpeg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">QR Quick Response</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+			-->
+
+			
+		</div>
+		
+	</div><!-- container -->
+	
+	<script src="lightboxjs/lightbox.min.js"></script>
+</body>
+</html>
+
