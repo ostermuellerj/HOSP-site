@@ -1,5 +1,5 @@
 # HOSP-site
-A demo site for my 2016-2017 FIRM project in association with the Hot Springs National Park.
+A demo site for my 2016-2017 FIRM project in association with the Hot Springs National Park, in loving memory of Jim Sanderson.
 
 ![Homepage](/images/home.png)
 
